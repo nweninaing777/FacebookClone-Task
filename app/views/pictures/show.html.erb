@@ -1,0 +1,15 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+ <strong>Image:</strong>
+ <%= image_tag @picture.image.url  %>
+</p>
+
+<p>
+ <strong>Content:</strong>
+ <%= @picture.content %>
+</p>
+
+<button type="button" class="btn btn-primary btn-sm"><%= link_to 'Edit', edit_picture_path(@picture) %> </button>
+<button type="button" class="btn btn-primary btn-sm"><%= link_to 'Back', pictures_path %></button>

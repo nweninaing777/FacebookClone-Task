@@ -1,0 +1,157 @@
+body {
+  background-color: #F5F5F5;
+  color: #333;
+  margin: 33px;
+font-variant: inherit;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+
+body,
+#wrapper {
+
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+p, ol, ul, td {
+  font-variant: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+.btn {
+  background-color: #2950B9;
+  color:#D7DBDD;
+}
+.checkshow{
+  background-color: #2950B9;
+  color:#D7DBDD;
+
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: white;
+
+
+
+  &:hover {
+    color: blue;
+   opacity: 0.4;
+  }
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding: 0 5px 7px;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+.notice {
+  color: #7129B9  ;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color:#B9293F ;
+  display: table;
+  color: #090C09 ;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #95A5A6;
+  color: #884EA0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  display: block;
+}
+
+.navbar {
+  background-color:#000080;
+  font-family: 'Rowdies', cursive;
+  color: #C0C0C0;
+  top: 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #000080;
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-align: center;
+  color: #C0C0C0;
+
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  width:1370px;
+	margin:0 auto;
+}
+
+.row {
+  background-color: #DCDCDC;
+  margin-bottom: 50px;
+}
+
+.posted_comment {
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 20px;
+
+}
+
+.btn-group btn-group-sm {
+  text-align: center;
+}
+
+.posted_picture {
+  margin-bottom: 50px;
+}
+
+
+.new_user {
+  margin-top: 80px;
+}

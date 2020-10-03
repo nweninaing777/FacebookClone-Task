@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+<br>
+<table class="container">
+  <div class="row">
+    <% @users.each do |user| %>
+      <ul class="btn-group btn-group-sm">
+        <li class="col-md-12"><h4>Username: <%= user.name %></h4></li>
+        <li class="col-md-12"><h4>Email: <%= user.email %></h4></li>
+      </ul>
+        <button type="button" class="btn btn-info"><%= link_to 'Show', user %></button>
+        <button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_user_path(user) %></button>
+        <button type="button" class="btn btn-danger"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+      <br>
+    <% end %>
+  </div>
+</table>
+<br>
+
+<button type="button" class="btn btn-info new_user"><%= link_to 'New User', new_user_path %></button>
