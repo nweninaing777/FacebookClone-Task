@@ -7,7 +7,7 @@
     <% @pictures.each do |picture| %>
       <div class="btn-group btn-group-sm">
         <div class="col-md-12"><h4>Username: <%= picture.user.name %></h4></div>
-        <div class="col-md-12 posted_comment"><h5>diary：<%= picture.content %></h5></div>
+        <div class="col-md-12 posted_comment"><h5>content：<%= picture.content %></h5></div>
         <div class="col-md-12 posted_picture"><%= image_tag picture.image.url %></div>
         <button type="button" class="btn btn-info"><%= link_to 'Show', picture %></button>
         <button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_picture_path(picture) %></button>

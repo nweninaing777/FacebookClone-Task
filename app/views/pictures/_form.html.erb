@@ -1,8 +1,7 @@
-<%= form_with(model: picture, local: true, url:confirm_pictures_path) do |form| %>
+<%= form_with(model: picture, url:confirm_pictures_path, local: true) do |form| %>
   <% if picture.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
-
       <ul>
       <% picture.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,19 +10,19 @@
     </div>
   <% end %>
 
+<div class="signupform">
   <div class="field">
     <%= form.label :image %>
     <%= form.file_field :image %>
-    <%= image_tag(@picture.image.url) if @picture.image && @picture.image.url %>
-    <%= form.hidden_field :image_cache %>
-  </div>
+  </div><br>
 
   <div class="field">
     <%= form.label :content %>
     <%= form.text_area :content %>
-  </div>
+  </div><br>
 
   <div class="actions">
     <%= form.submit %>
+  </div>
   </div>
 <% end %>
