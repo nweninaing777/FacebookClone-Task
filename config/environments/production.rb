@@ -26,7 +26,7 @@ Rails.application.configure do
 
   config.log_formatter = ::Logger::Formatter.new
 
-)
+
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
@@ -38,5 +38,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  rd.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
+
 end
